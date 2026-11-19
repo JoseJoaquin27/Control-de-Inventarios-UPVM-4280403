@@ -3,8 +3,8 @@
 ██║   ██║██╔══██╗ ██║   ██║ ████╗ ████║
 ██║   ██║██████╔╝ ██║   ██║ ██╔████╔██║    - Guia de instalación del proyecto
 ██║   ██║██╔═══╝  ╚██╗ ██╔╝ ██║╚██╔╝██║
-╚██████╔╝██║       ╚████╔╝   ██║ ╚═╝ ██║
- ╚═════╝ ╚═╝        ╚═══╝     ╚═╝       ╚═╝
+╚██████╔╝██║       ╚████╔╝  ██║ ╚═╝ ██║
+ ╚═════╝ ╚═╝        ╚═══╝   ╚═╝     ╚═╝
                                      
 Proyecto por:
 Camargo Méndez José Joaquín
@@ -102,7 +102,6 @@ Den clic en Modify options → Add VM options y peguen la siguiente línea (camb
 
 
 --module-path "C:\ruta\a\su\javafx-sdk\lib" --add-modules javafx.controls,javafx.fxml
-
 
 
 Den clic en Apply y OK.
