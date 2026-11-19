@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PanelTramitesController">
+    <children>
+        <Label layoutX="30.0" layoutY="25.0" text="Gestión de Trámites - UPVM">
+            <font>
+                <Font name="System Bold" size="22.0" />
+            </font>
+        </Label>
+
+        <TableView fx:id="tablaTramites" layoutX="30.0" layoutY="80.0" prefHeight="330.0" prefWidth="740.0">
+            <columns>
+                <TableColumn fx:id="colFolio" prefWidth="70.0" text="Folio" />
+                <TableColumn fx:id="colEstudiante" prefWidth="200.0" text="Estudiante" />
+                <TableColumn fx:id="colDescripcion" prefWidth="290.0" text="Descripción del Trámite" />
+                <TableColumn fx:id="colMaterialId" prefWidth="90.0" text="ID Material" />
+                <TableColumn fx:id="colCantidad" prefWidth="89.0" text="Cantidad" />
+            </columns>
+        </TableView>
+
+        <TextField fx:id="txtFolio" layoutX="30.0" layoutY="440.0" prefWidth="70.0" promptText="Folio" />
+        <TextField fx:id="txtEstudiante" layoutX="110.0" layoutY="440.0" prefWidth="170.0" promptText="Nombre del estudiante" />
+        <TextField fx:id="txtDescripcion" layoutX="290.0" layoutY="440.0" prefWidth="200.0" promptText="Descripción del trámite" />
+        <TextField fx:id="txtMaterialId" layoutX="500.0" layoutY="440.0" prefWidth="80.0" promptText="ID Material" />
+        <TextField fx:id="txtCantidad" layoutX="590.0" layoutY="440.0" prefWidth="70.0" promptText="Cant." />
+
+        <Button layoutX="670.0" layoutY="440.0" mnemonicParsing="false" onAction="#registrarTramite" prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: #2c3e50; -fx-text-fill: white;" text="Registrar" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #f4f6f9;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PanelInicioController">
+    <children>
+        <VBox layoutX="50.0" layoutY="40.0" prefHeight="520.0" prefWidth="700.0" spacing="25.0">
+            <children>
+                <!-- Título de Bienvenida -->
+                <VBox spacing="5.0">
+                    <children>
+                        <Label text="¡Bienvenido!" textFill="#1e293b">
+                            <font>
+                                <Font name="System Bold" size="32.0" />
+                            </font>
+                        </Label>
+                        <Label text="Sistema Escolar y de Control — UPVM" textFill="#475569">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </VBox>
+
+                <!-- Descripción del Sistema -->
+                <Label alignment="TOP_LEFT" prefHeight="60.0" prefWidth="650.0" text="Este sistema te permite gestionar eficientemente el inventario de materiales, el flujo de préstamos y el registro de trámites académicos de la universidad, facilitando el control en tiempo real mediante estructuras de datos y persistencia local." textFill="#64748b" wrapText="true">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+
+                <!-- Tarjetas de Resumen / Módulos -->
+                <HBox alignment="CENTER_LEFT" prefHeight="160.0" prefWidth="700.0" spacing="20.0">
+                    <children>
+                        <!-- Tarjeta 1: Inventario -->
+                        <VBox alignment="CENTER" prefHeight="150.0" prefWidth="160.0" spacing="8.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.05), 10, 0, 0, 4);">
+                            <children>
+                                <Label text="📦" textFill="#2563eb">
+                                    <font>
+                                        <Font size="28.0" />
+                                    </font>
+                                </Label>
+                                <Label text="Inventario" textFill="#1e293b">
+                                    <font>
+                                        <Font name="System Bold" size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label text="Lista Enlazada" textFill="#94a3b8">
+                                    <font>
+                                        <Font size="11.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </VBox>
+
+                        <!-- Tarjeta 2: Préstamos -->
+                        <VBox alignment="CENTER" prefHeight="150.0" prefWidth="160.0" spacing="8.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.05), 10, 0, 0, 4);">
+                            <children>
+                                <Label text="📋" textFill="#2563eb">
+                                    <font>
+                                        <Font size="28.0" />
+                                    </font>
+                                </Label>
+                                <Label text="Préstamos" textFill="#1e293b">
+                                    <font>
+                                        <Font name="System Bold" size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label text="Cola (FIFO)" textFill="#94a3b8">
+                                    <font>
+                                        <Font size="11.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </VBox>
+
+                        <!-- Tarjeta 3: Trámites -->
+                        <VBox alignment="CENTER" prefHeight="150.0" prefWidth="160.0" spacing="8.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.05), 10, 0, 0, 4);">
+                            <children>
+                                <Label text="📑" textFill="#2563eb">
+                                    <font>
+                                        <Font size="28.0" />
+                                    </font>
+                                </Label>
+                                <Label text="Trámites" textFill="#1e293b">
+                                    <font>
+                                        <Font name="System Bold" size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label text="Cola (FIFO)" textFill="#94a3b8">
+                                    <font>
+                                        <Font size="11.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </VBox>
+
+                        <!-- Tarjeta 4: Historial -->
+                        <VBox alignment="CENTER" prefHeight="150.0" prefWidth="160.0" spacing="8.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.05), 10, 0, 0, 4);">
+                            <children>
+                                <Label text="⏳" textFill="#2563eb">
+                                    <font>
+                                        <Font size="28.0" />
+                                    </font>
+                                </Label>
+                                <Label text="Historial" textFill="#1e293b">
+                                    <font>
+                                        <Font name="System Bold" size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label text="Pila (LIFO)" textFill="#94a3b8">
+                                    <font>
+                                        <Font size="11.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </VBox>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

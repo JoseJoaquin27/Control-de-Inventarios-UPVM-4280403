@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.StackPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.VentanaPrincipalController">
+    <left>
+        <VBox prefHeight="600.0" prefWidth="200.0" spacing="10.0" style="-fx-background-color: #2c3e50; -fx-padding: 15;" BorderPane.alignment="CENTER">
+            <children>
+                <Button maxWidth="Infinity" text="Inicio" onAction="#mostrarInicio" />
+                <Button maxWidth="Infinity" text="Inventario" onAction="#mostrarInventario" />
+                <Button maxWidth="Infinity" text="Préstamos" onAction="#mostrarPrestamos" />
+                <Button maxWidth="Infinity" text="Trámites" onAction="#mostrarTramites" />
+                <Button maxWidth="Infinity" text="Historial" onAction="#mostrarHistorial" />
+            </children>
+        </VBox>
+    </left>
+    <center>
+        <StackPane fx:id="contentArea" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #ecf0f1;" BorderPane.alignment="CENTER" />
+    </center>
+</BorderPane>
